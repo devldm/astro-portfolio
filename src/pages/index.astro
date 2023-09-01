@@ -1,100 +1,73 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro.tsx";
+import Project from "../components/Project.astro.tsx";
+import { Projects } from "../data/projects.ts";
+import { type ProjectType } from "../data/projects.ts";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h1>Welcome to <span class="text-gradient">ooooo</span></h1>
-    <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-      above.
+<Layout title="Hi, I'm Liam">
+  <main class="m-auto p-1 w-[800px] max-w-[calc(100%-2rem)] text-lg line-h-1_6">
+    <p class="pt-10 md:pt-24 text-lg md:text-2xl">
+      Hi, I'm Liam. I recently left my role as Software Engineer at JustGiving
+      and moved to Seoul. I am currently learning Korean at Seoul National
+      University whilst searching for new roles.
+      <br /><br />
+       I've worked with many technologies throughout my career including a focus
+      on React, Typescript, .NET, C# and GraphQL.
+      <br /><br />
+       If you are interested in my <strong>Game Development</strong>{" "}
+       projects, check out my Game Dev portfolio{" "}
+      <a
+        href="https://liam-game-dev.vercel.app/"
+        target="_blank"
+        class="text-green-500"
+      >
+        here</a
+      >.
+      <br /><br />
+       Find me on{" "}
+      <a
+        href="https://www.linkedin.com/in/liam-m-9ba500101/"
+        target="_blank"
+        class="text-green-500"
+      >
+        @LinkedIn
+      </a>{" "}
+       -{" "}
+      <a
+        href="https://github.com/devldm"
+        target="_blank"
+        class="text-green-500"
+      >
+        @GitHub</a
+      >
+
+       -{" "}
+      <a
+        href="https://dribbble.com/LiamIsDesigning"
+        target="_blank"
+        class="text-green-500"
+      >
+        @Dribbble
+      </a>{" "}
     </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-    </ul>
+    <section id="projects" class="mt-6 md:mt-16">
+      <h2 class="text-3xl font-bold mb-6 md:mb-10">Featured Projects</h2>
+      <div class="grid grid-cols-1 gap-6">
+        {
+          Projects.map((project: ProjectType) => {
+            return (
+              <Project
+                liveHref={project.liveHref}
+                title={project.title}
+                body={project.body}
+                github={project.github}
+                stack={project.stack}
+              />
+            );
+          })
+        }
+      </div>
+    </section>
   </main>
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-  .astro-a {
-    position: absolute;
-    top: -32px;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 220px;
-    height: auto;
-    z-index: -1;
-  }
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-  .instructions {
-    margin-bottom: 2rem;
-    border: 1px solid rgba(var(--accent-light), 25%);
-    background: linear-gradient(
-      rgba(var(--accent-dark), 66%),
-      rgba(var(--accent-dark), 33%)
-    );
-    padding: 1.5rem;
-    border-radius: 8px;
-  }
-  .instructions code {
-    font-size: 0.8em;
-    font-weight: bold;
-    background: rgba(var(--accent-light), 12%);
-    color: rgb(var(--accent-light));
-    border-radius: 4px;
-    padding: 0.3em 0.4em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent-light));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 2rem;
-    padding: 0;
-  }
-</style>
