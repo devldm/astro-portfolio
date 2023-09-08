@@ -27,14 +27,14 @@ const { liveHref, title, body, github, stack } = Astro.props;
     <div class="mt-3">
       {
         liveHref && (
-          <a href={liveHref} class="mr-3 text-green-500">
+          <a href={liveHref} target="_blank" class="mr-3 text-green-500">
             See live
           </a>
         )
       }
       {
         github && (
-          <a href={github} class="text-green-500">
+          <a href={github} target="_blank" class="text-green-500">
             GitHub
           </a>
         )

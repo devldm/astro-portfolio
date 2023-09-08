@@ -42,4 +42,11 @@ export const Projects: ProjectType[] = [
     ],
     github: "https://github.com/devldm/go-next",
   },
+  {
+    title: "This Portfolio Site",
+    body: "Simple portfolio site built with Astro and tailwindCSS",
+    liveHref: "",
+    stack: ["Astro", "tailwindCSS"],
+    github: "https://github.com/devldm/astro-portfolio",
+  },
 ];
