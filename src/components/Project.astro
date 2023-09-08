@@ -1,16 +1,19 @@
 ---
+import TechPill from "./TechPill.astro";
 interface Props {
   title: string;
   body: string;
   liveHref: string | null;
   github: string;
-  stack: string;
+  stack: string[];
 }
 
 const { liveHref, title, body, github, stack } = Astro.props;
 ---
 
-<div class="project flex flex-row p-6 rounded-lg bg-gray-800">
+<div
+  class="project flex flex-row p-6 rounded-lg bg-[#1d232a] border-2 border-gray-700"
+>
   <div class="flex flex-col">
     <h2 class="text-2xl font-bold">
       {title}
@@ -18,8 +21,9 @@ const { liveHref, title, body, github, stack } = Astro.props;
     <p class="mt-2">
       {body}
     </p>
-
-    <p class="mt-3">Stack: {stack}</p>
+    <div class="flex flex-row mt-2 flex-wrap">
+      {stack.map((tech) => <TechPill tech={tech} />)}
+    </div>
     <div class="mt-3">
       {
         liveHref && (
