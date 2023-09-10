@@ -1,4 +1,5 @@
 export type ProjectType = {
+  imgPath?: string;
   title: string;
   body: string;
   stack: string[];
@@ -8,30 +9,17 @@ export type ProjectType = {
 
 export const Projects: ProjectType[] = [
   {
+    imgPath: "./public/images/airbnb-crop-more-1.png",
     title: "airbnb remake",
     body: "Remake of airbnb website where you can view listings",
     liveHref: "https://go-next-three.vercel.app/",
-    stack: [
-      "React",
-      "Next.js",
-      "tailwindCSS",
-      "Go",
-      "Fiber",
-      "MongoDB",
-      "Vercel",
-    ],
+    stack: ["React", "tailwindCSS", "Next.js", "Go", "Fiber", "MongoDB"],
     github: "https://github.com/devldm/go-next",
   },
   {
-    title: "Component showcase (Storybook)",
-    body: "A showcase of custom built React / TailwindCSS components in Storybook",
-    liveHref: "https://liam-component-showcase.vercel.app/",
-    stack: ["Storybook", "tailwindCSS", "Next.js", "Vercel"],
-    github: "https://github.com/devldm/component-showcase",
-  },
-  {
+    imgPath: "./public/images/wallet-crop-1.png",
     title: "Simple Android Wallet",
-    body: "Cryptocurrency wallet with a main goal of been lightweight and android native. It could send, receive and store currencies held on ethereum and polygon networks",
+    body: "lightweight and android native cryptocurrency wallet. Send, receive and store currencies held on ethereum networks",
     liveHref: "",
     stack: [
       "Kotlin",
@@ -39,11 +27,11 @@ export const Projects: ProjectType[] = [
       "Android Studio",
       "Web3j",
       "Covalent API",
-      "Google Play Console",
     ],
     github: "https://github.com/devldm/SimpleAndroidWallet",
   },
   {
+    imgPath: "./public/images/go-skmore-crop.png",
     title: "GO-SK",
     body: "I am currently looking for a role in South Korea and wanted to help others who might be in my position by making a platform suited for them.",
     liveHref: "https://go-sk.vercel.app/",
@@ -52,14 +40,21 @@ export const Projects: ProjectType[] = [
       "Next.js",
       "Prisma",
       "TypeScript",
-      "Vercel",
       "PostgreSQL",
       "Railway",
-      "Vercel",
     ],
     github: "https://github.com/devldm/go-next",
   },
   {
+    imgPath: "",
+    title: "Component showcase (Storybook)",
+    body: "A showcase of custom built React / TailwindCSS components in Storybook",
+    liveHref: "https://liam-component-showcase.vercel.app/",
+    stack: ["Storybook", "tailwindCSS", "Next.js"],
+    github: "https://github.com/devldm/component-showcase",
+  },
+  {
+    imgPath: "",
     title: "This Portfolio Site",
     body: "Simple portfolio site built with Astro and tailwindCSS",
     liveHref: "",
