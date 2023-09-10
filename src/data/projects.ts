@@ -9,7 +9,7 @@ export type ProjectType = {
 
 export const Projects: ProjectType[] = [
   {
-    imgPath: "./public/images/airbnb-crop-more-1.png",
+    imgPath: "images/airbnb-crop-more-1.png",
     title: "airbnb remake",
     body: "Remake of airbnb website where you can view listings",
     liveHref: "https://go-next-three.vercel.app/",
@@ -17,7 +17,7 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/go-next",
   },
   {
-    imgPath: "./public/images/wallet-crop-1.png",
+    imgPath: "images/wallet-crop-1.png",
     title: "Simple Android Wallet",
     body: "lightweight and android native cryptocurrency wallet. Send, receive and store currencies held on ethereum networks",
     liveHref: "",
@@ -31,7 +31,7 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/SimpleAndroidWallet",
   },
   {
-    imgPath: "./public/images/go-skmore-crop.png",
+    imgPath: "images/go-skmore-crop.png",
     title: "GO-SK",
     body: "I am currently looking for a role in South Korea and wanted to help others who might be in my position by making a platform suited for them.",
     liveHref: "https://go-sk.vercel.app/",
