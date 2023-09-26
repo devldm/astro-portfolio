@@ -58,7 +58,7 @@ export const Projects: ProjectType[] = [
       "PostgreSQL",
       "Railway",
     ],
-    github: "https://github.com/devldm/go-next",
+    github: "https://github.com/devldm/go-sk",
   },
   {
     imgPath: "",
