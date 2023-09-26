@@ -9,6 +9,21 @@ export type ProjectType = {
 
 export const Projects: ProjectType[] = [
   {
+    imgPath: "images/gc.png",
+    title: "GrammarCheck",
+    body: "In progress project that allows people to practice Korean grammar.",
+    liveHref: "",
+    stack: [
+      "React",
+      "tailwindCSS",
+      "Next.js",
+      "Drizzle ORM",
+      "NextAuth.js",
+      "MySql",
+    ],
+    github: "https://github.com/devldm/grammar-check",
+  },
+  {
     imgPath: "images/airbnb-crop-more-1.png",
     title: "airbnb remake",
     body: "Remake of airbnb website where you can view listings",
