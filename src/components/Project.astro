@@ -24,22 +24,22 @@ const { liveHref, title, body, github, stack, imgPath } = Astro.props;
           <Image
             src={imgPath}
             alt="project-image"
-            width={400}
-            height={400}
+            width={275}
+            height={200}
             class="object-contain rounded-lg"
           />
         )}
       </div>
     )
   }
-  <div class="flex flex-col justify-between md:width-[50%] md:ml-3 p-4">
-    <h2 class="text-2xl font-bold mt-3">
+  <div class="flex flex-col justify-between md:width-[50%] md:ml-3 p-3">
+    <h2 class="text-xl font-bold mt-1">
       {title}
     </h2>
-    <p class="mt-2">
+    <p class="mt-1 text-md">
       {body}
     </p>
-    <div class="flex flex-row mt-2 flex-wrap">
+    <div class="flex flex-row mt-1 flex-wrap">
       {stack.map((tech) => <TechPill tech={tech} />)}
     </div>
     <div class="mt-3">

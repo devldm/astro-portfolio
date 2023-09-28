@@ -6,29 +6,22 @@ import { type ProjectType } from "../data/projects.ts";
 ---
 
 <Layout title="Hi, I'm Liam">
-  <main class="m-auto p-1 w-[900px] max-w-[calc(100%-2rem)] text-lg line-h-1_6">
-    <p class="pt-10 md:pt-24 text-lg md:text-2xl">
+  <main class="m-auto p-1 w-[900px] max-w-[calc(100%-2rem)] text-lg">
+    <p class="text-lg md:text-xl mt-12">
       Hi, I'm Liam. I recently left my role as Software Engineer at <a
         href="https://www.justgiving.com/"
         target="_blank"
         class="text-green-500"
       >
         JustGiving</a
-      > and moved to Seoul. I am currently learning Korean at Seoul National
-      University whilst searching for new roles.
+      > and moved to Seoul, where I am learning Korean at SNU whilst searching
+      for new roles.
       <br /><br />
-       I've worked with many technologies throughout my career including a focus
-      on React, Typescript, .NET, C# and GraphQL.
-      <br /><br />
-       If you are interested in my <strong>Game Development</strong>{" "}
-       projects, check out my Game Dev portfolio{" "}
-      <a
-        href="https://liam-game-dev.vercel.app/"
-        target="_blank"
-        class="text-green-500"
-      >
-        here</a
-      >.
+       Check out the projects below to see the skills I used in recent projects.
+
+
+      <!-- Skills: React, Typescript, .NET, C#, GraphQL Next.js, SQL, Storybook and more! -->
+
       <br /><br />
        Find me on{" "}
       <a
@@ -56,9 +49,9 @@ import { type ProjectType } from "../data/projects.ts";
         @Dribbble
       </a>{" "}
     </p>
-    <section id="projects" class="my-6 md:my-16">
-      <h2 class="text-3xl font-bold mb-6 md:mb-10">Featured Projects</h2>
-      <div class="grid grid-cols-1 gap-6">
+    <section id="projects" class="my-2 md:my-6">
+      <h2 class="text-2xl font-bold mb-3 md:mb-5">Featured Projects</h2>
+      <div class="grid grid-cols-1 gap-3">
         {
           Projects.map((project: ProjectType) => {
             return (

@@ -32,9 +32,9 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/go-next",
   },
   {
-    imgPath: "images/wallet-crop-1.png",
+    imgPath: "images/wallet-crop.png",
     title: "Simple Android Wallet",
-    body: "lightweight and android native cryptocurrency wallet. Send, receive and store currencies held on ethereum networks",
+    body: "lightweight, android native cryptocurrency wallet. Send, receive and store currencies.",
     liveHref: "",
     stack: [
       "Kotlin",
@@ -48,7 +48,7 @@ export const Projects: ProjectType[] = [
   {
     imgPath: "images/go-skmore-crop.png",
     title: "GO-SK",
-    body: "I am currently looking for a role in South Korea and wanted to help others who might be in my position by making a platform suited for them.",
+    body: "Job board for people hoping to work in South Korea",
     liveHref: "https://go-sk.vercel.app/",
     stack: [
       "React",
@@ -68,12 +68,12 @@ export const Projects: ProjectType[] = [
     stack: ["Storybook", "tailwindCSS", "Next.js"],
     github: "https://github.com/devldm/component-showcase",
   },
-  {
-    imgPath: "",
-    title: "This Portfolio Site",
-    body: "Simple portfolio site built with Astro and tailwindCSS",
-    liveHref: "",
-    stack: ["Astro", "tailwindCSS", "Vercel"],
-    github: "https://github.com/devldm/astro-portfolio",
-  },
+  // {
+  //   imgPath: "",
+  //   title: "This Portfolio Site",
+  //   body: "Simple portfolio site built with Astro and tailwindCSS",
+  //   liveHref: "",
+  //   stack: ["Astro", "tailwindCSS", "Vercel"],
+  //   github: "https://github.com/devldm/astro-portfolio",
+  // },
 ];
