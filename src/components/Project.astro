@@ -1,11 +1,15 @@
 ---
 import TechPill from "./TechPill.astro";
 import { Image } from "astro:assets";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 interface Props {
   imgPath: string | null;
   title: string;
-  body: string;
+  body?: string;
   liveHref: string | null;
   github: string;
   stack: string[];
@@ -36,9 +40,7 @@ const { liveHref, title, body, github, stack, imgPath } = Astro.props;
     <h2 class="text-2xl font-bold mt-3">
       {title}
     </h2>
-    <p class="mt-2">
-      {body}
-    </p>
+    {body && <p class="mt-2">{body}</p>}
     <div class="flex flex-row mt-2 flex-wrap">
       {stack.map((tech) => <TechPill tech={tech} />)}
     </div>
@@ -46,7 +48,7 @@ const { liveHref, title, body, github, stack, imgPath } = Astro.props;
       {
         liveHref && (
           <a href={liveHref} target="_blank" class="mr-3 text-green-500">
-            See live
+            {t("project.live")}
           </a>
         )
       }
