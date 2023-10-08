@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 interface Props {
   imgPath: string | null;
   title: string;
-  body: string;
+  body?: string;
   liveHref: string | null;
   github: string;
   stack: string[];
@@ -36,9 +36,7 @@ const { liveHref, title, body, github, stack, imgPath } = Astro.props;
     <h2 class="text-2xl font-bold mt-3">
       {title}
     </h2>
-    <p class="mt-2">
-      {body}
-    </p>
+    {body && <p class="mt-2">{body}</p>}
     <div class="flex flex-row mt-2 flex-wrap">
       {stack.map((tech) => <TechPill tech={tech} />)}
     </div>
