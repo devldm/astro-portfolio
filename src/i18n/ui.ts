@@ -10,6 +10,6 @@ export const ui = {
     "project.live": "See live",
   },
   kr: {
-    "project.live": "사이트 갑니다",
+    "project.live": "사이트 바로가기",
   },
 } as const;
