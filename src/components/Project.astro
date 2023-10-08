@@ -1,6 +1,10 @@
 ---
 import TechPill from "./TechPill.astro";
 import { Image } from "astro:assets";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 interface Props {
   imgPath: string | null;
@@ -44,7 +48,7 @@ const { liveHref, title, body, github, stack, imgPath } = Astro.props;
       {
         liveHref && (
           <a href={liveHref} target="_blank" class="mr-3 text-green-500">
-            See live
+            {t("project.live")}
           </a>
         )
       }

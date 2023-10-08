@@ -38,6 +38,7 @@ export const Projects: ProjectType[] = [
     imgPath: "/images/wallet-crop-1.png",
     title: "Simple Android Wallet",
     body: "lightweight and android native cryptocurrency wallet. Send, receive and store currencies held on ethereum networks",
+    body_kr: "가상 화페 기잡. 보관하고, 받고 보낼 수 있습니다. ",
     liveHref: "",
     stack: [
       "Kotlin",
@@ -77,6 +78,7 @@ export const Projects: ProjectType[] = [
     imgPath: "",
     title: "This Portfolio Site",
     body: "Simple portfolio site built with Astro and tailwindCSS",
+    body_kr: "",
     liveHref: "",
     stack: ["Astro", "tailwindCSS", "Vercel"],
     github: "https://github.com/devldm/astro-portfolio",
