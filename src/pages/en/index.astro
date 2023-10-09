@@ -3,11 +3,14 @@ import Layout from "../../layouts/Layout.astro";
 import Project from "../../components/Project.astro";
 import { Projects } from "../../data/projects.ts";
 import { type ProjectType } from "../../data/projects.ts";
+import LangPicker from "../../components/LangPicker.astro";
 ---
 
 <Layout title="Hi, I'm Liam">
   <main class="m-auto p-1 w-[900px] max-w-[calc(100%-2rem)] text-lg line-h-1_6">
-    <p class="pt-10 md:pt-24 text-lg md:text-2xl">
+    <LangPicker />
+
+    <p class="pt-5 md:pt-5 text-lg md:text-2xl">
       Hi, I'm Liam. I recently left my role as Software Engineer at <a
         href="https://www.justgiving.com/"
         target="_blank"
