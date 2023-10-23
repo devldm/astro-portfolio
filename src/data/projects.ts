@@ -26,6 +26,23 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/grammar-check",
   },
   {
+    imgPath: "/images/go-skmore-crop.png",
+    title: "GO-SK",
+    body: "I am currently looking for a role in South Korea and wanted to help others who might be in my position by making a platform suited for them.",
+    body_kr:
+      "한국에서 취직하고자 하는 개발자들을 위해 한국 개발자 채용 사이트를 만들었습니다.",
+    liveHref: "https://go-sk.vercel.app/",
+    stack: [
+      "React",
+      "Next.js",
+      "Prisma",
+      "TypeScript",
+      "PostgreSQL",
+      "Railway",
+    ],
+    github: "https://github.com/devldm/go-sk",
+  },
+  {
     imgPath: "/images/airbnb-crop-more-1.png",
     title: "airbnb remake",
     body: "Remake of airbnb website where you can view listings",
@@ -48,23 +65,6 @@ export const Projects: ProjectType[] = [
       "Covalent API",
     ],
     github: "https://github.com/devldm/SimpleAndroidWallet",
-  },
-  {
-    imgPath: "/images/go-skmore-crop.png",
-    title: "GO-SK",
-    body: "I am currently looking for a role in South Korea and wanted to help others who might be in my position by making a platform suited for them.",
-    body_kr:
-      "한국에서 취직하고자 하는 개발자들을 위해 한국 개발자 채용 사이트를 만들었습니다.",
-    liveHref: "https://go-sk.vercel.app/",
-    stack: [
-      "React",
-      "Next.js",
-      "Prisma",
-      "TypeScript",
-      "PostgreSQL",
-      "Railway",
-    ],
-    github: "https://github.com/devldm/go-sk",
   },
   {
     imgPath: "",
