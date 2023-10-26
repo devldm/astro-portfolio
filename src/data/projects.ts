@@ -26,11 +26,28 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/grammar-check",
   },
   {
+    imgPath: "/images/go-skmore-crop.png",
+    title: "GO-SK",
+    body: "I am currently looking for a role in South Korea and wanted to help others who might be in my position by making a platform suited for them.",
+    body_kr:
+      "한국에서 취직하고자 하는 개발자들을 위해 한국 개발자 채용 사이트를 만들었습니다.",
+    liveHref: "https://go-sk.vercel.app/",
+    stack: [
+      "React",
+      "Next.js",
+      "Prisma",
+      "TypeScript",
+      "PostgreSQL",
+      "Railway",
+    ],
+    github: "https://github.com/devldm/go-sk",
+  },
+  {
     imgPath: "/images/airbnb-crop-more-1.png",
     title: "airbnb remake",
     body: "Remake of airbnb website where you can view listings",
     body_kr: "airbnb와 비슷한 사이트이며, 다양한 에어비엔비 리스트를 확인할 수 있습니다.",
-    liveHref: "https://go-next-three.vercel.app/",
+    liveHref: "",
     stack: ["React", "tailwindCSS", "Next.js", "Go", "Fiber", "MongoDB"],
     github: "https://github.com/devldm/go-next",
   },
@@ -50,23 +67,6 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/SimpleAndroidWallet",
   },
   {
-    imgPath: "/images/go-skmore-crop.png",
-    title: "GO-SK",
-    body: "I am currently looking for a role in South Korea and wanted to help others who might be in my position by making a platform suited for them.",
-    body_kr:
-      "한국에서 취직하고자 하는 개발자들을 위해 한국 개발자 채용 사이트를 만들었습니다.",
-    liveHref: "https://go-sk.vercel.app/",
-    stack: [
-      "React",
-      "Next.js",
-      "Prisma",
-      "TypeScript",
-      "PostgreSQL",
-      "Railway",
-    ],
-    github: "https://github.com/devldm/go-sk",
-  },
-  {
     imgPath: "",
     title: "Component showcase (Storybook)",
     body: "A showcase of custom built React / TailwindCSS components in Storybook",
@@ -84,3 +84,17 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/astro-portfolio",
   },
 ];
+
+export const LunitProjects = [
+  {
+    imgPath: "/images/osd1.png",
+    title: "osd-next",
+    body: "Implementing the viewer demo projects in NextJS",
+    body_kr:
+      "NextJS를 사용하여 뷰어 데모 프로젝트 구현",
+    liveHref: "",
+    stack: ["React", "tailwindCSS", "Next.js", "osd-react-renderer"],
+    github: "https://github.com/devldm/osd-next",
+  },
+  ...Projects
+]
