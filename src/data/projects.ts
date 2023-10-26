@@ -47,7 +47,7 @@ export const Projects: ProjectType[] = [
     title: "airbnb remake",
     body: "Remake of airbnb website where you can view listings",
     body_kr: "airbnb와 비슷한 사이트이며, 다양한 에어비엔비 리스트를 확인할 수 있습니다.",
-    liveHref: "https://go-next-three.vercel.app/",
+    liveHref: "",
     stack: ["React", "tailwindCSS", "Next.js", "Go", "Fiber", "MongoDB"],
     github: "https://github.com/devldm/go-next",
   },
@@ -84,3 +84,17 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/astro-portfolio",
   },
 ];
+
+export const LunitProjects = [
+  {
+    imgPath: "/images/osd1.png",
+    title: "osd-next",
+    body: "Implementing the viewer demo projects in NextJS",
+    body_kr:
+      "NextJS를 사용하여 뷰어 데모 프로젝트 구현",
+    liveHref: "",
+    stack: ["React", "tailwindCSS", "Next.js", "osd-react-renderer"],
+    github: "https://github.com/devldm/osd-next",
+  },
+  ...Projects
+]

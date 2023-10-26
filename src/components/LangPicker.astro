@@ -2,12 +2,17 @@
 import { getLangFromUrl } from "../i18n/utils";
 
 const langToShow = getLangFromUrl(Astro.url) === "kr" ? "en" : "kr";
+
+const path = Astro.url.pathname.slice(4);
 ---
 
 <ul class="pt-5 text-right">
   {
     (
-      <a href={`/${langToShow}/`} class="font-bold uppercase">
+      <a
+        href={path ? `/${langToShow}/${path}` : `/${langToShow}/`}
+        class="font-bold uppercase"
+      >
         {langToShow}
       </a>
     )
