@@ -13,8 +13,9 @@ export const Projects: ProjectType[] = [
     imgPath: "/images/gc.png",
     title: "GrammarCheck",
     body: "In progress project that allows people to practice Korean grammar.",
-    body_kr: "한국어를 혼자 공부하고 싶은 사람들을 위해 만들었습니다. 한국어 문법을 연습할 수 있습니다.",
-    liveHref: "",
+    body_kr:
+      "한국어를 혼자 공부하고 싶은 사람들을 위해 만들었습니다. 한국어 문법을 연습할 수 있습니다.",
+    liveHref: "https://kr-grammar-check.vercel.app/",
     stack: [
       "React",
       "tailwindCSS",
@@ -46,7 +47,8 @@ export const Projects: ProjectType[] = [
     imgPath: "/images/airbnb-crop-more-1.png",
     title: "airbnb remake",
     body: "Remake of airbnb website where you can view listings",
-    body_kr: "airbnb와 비슷한 사이트이며, 다양한 에어비엔비 리스트를 확인할 수 있습니다.",
+    body_kr:
+      "airbnb와 비슷한 사이트이며, 다양한 에어비엔비 리스트를 확인할 수 있습니다.",
     liveHref: "",
     stack: ["React", "tailwindCSS", "Next.js", "Go", "Fiber", "MongoDB"],
     github: "https://github.com/devldm/go-next",
@@ -90,11 +92,10 @@ export const LunitProjects = [
     imgPath: "/images/osd1.png",
     title: "osd-next",
     body: "Implementing the viewer demo projects in NextJS",
-    body_kr:
-      "NextJS를 사용하여 뷰어 데모 프로젝트 구현",
+    body_kr: "NextJS를 사용하여 뷰어 데모 프로젝트 구현",
     liveHref: "",
     stack: ["React", "tailwindCSS", "Next.js", "osd-react-renderer"],
     github: "https://github.com/devldm/osd-next",
   },
-  ...Projects
-]
+  ...Projects,
+];
