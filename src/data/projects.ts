@@ -10,23 +10,6 @@ export type ProjectType = {
 
 export const Projects: ProjectType[] = [
   {
-    imgPath: "/images/gc.png",
-    title: "GrammarCheck",
-    body: "In progress project that allows people to practice Korean grammar.",
-    body_kr:
-      "한국어를 혼자 공부하고 싶은 사람들을 위해 만들었습니다. 한국어 문법을 연습할 수 있습니다.",
-    liveHref: "https://kr-grammar-check.vercel.app/",
-    stack: [
-      "React",
-      "tailwindCSS",
-      "Next.js",
-      "Drizzle ORM",
-      "NextAuth.js",
-      "MySql",
-    ],
-    github: "https://github.com/devldm/grammar-check",
-  },
-  {
     imgPath: "/images/go-skmore-crop.png",
     title: "GO-SK",
     body: "I am currently looking for a role in South Korea and wanted to help others who might be in my position by making a platform suited for them.",
@@ -39,9 +22,26 @@ export const Projects: ProjectType[] = [
       "Prisma",
       "TypeScript",
       "PostgreSQL",
-      "Railway",
+      "Supabase",
     ],
     github: "https://github.com/devldm/go-sk",
+  },
+  {
+    imgPath: "/images/gc.png",
+    title: "GrammarCheck",
+    body: "In progress project that allows people to practice Korean grammar.",
+    body_kr:
+      "한국어를 혼자 공부하고 싶은 사람들을 위해 만들었습니다. 한국어 문법을 연습할 수 있습니다.",
+    liveHref: "",
+    stack: [
+      "React",
+      "tailwindCSS",
+      "Next.js",
+      "Drizzle ORM",
+      "NextAuth.js",
+      "MySql",
+    ],
+    github: "https://github.com/devldm/grammar-check",
   },
   {
     imgPath: "/images/airbnb-crop-more-1.png",

@@ -1,6 +1,8 @@
 # build output
 dist/
 
+lunit.astro
+
 # generated types
 .astro/
 
