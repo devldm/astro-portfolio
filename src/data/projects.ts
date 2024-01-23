@@ -86,16 +86,3 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/astro-portfolio",
   },
 ];
-
-export const LunitProjects = [
-  {
-    imgPath: "/images/osd1.png",
-    title: "osd-next",
-    body: "Implementing the viewer demo projects in NextJS",
-    body_kr: "NextJS를 사용하여 뷰어 데모 프로젝트 구현",
-    liveHref: "",
-    stack: ["React", "tailwindCSS", "Next.js", "osd-react-renderer"],
-    github: "https://github.com/devldm/osd-next",
-  },
-  ...Projects,
-];
