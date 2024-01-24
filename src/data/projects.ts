@@ -23,6 +23,7 @@ export const Projects: ProjectType[] = [
       "TypeScript",
       "PostgreSQL",
       "Supabase",
+      "playwright",
     ],
     github: "https://github.com/devldm/go-sk",
   },
