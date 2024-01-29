@@ -28,21 +28,14 @@ export const Projects: ProjectType[] = [
     github: "https://github.com/devldm/go-sk",
   },
   {
-    imgPath: "/images/gc.png",
+    imgPath: "/images/grammar-check.png",
     title: "GrammarCheck",
     body: "In progress project that allows people to practice Korean grammar.",
     body_kr:
       "한국어를 혼자 공부하고 싶은 사람들을 위해 만들었습니다. 한국어 문법을 연습할 수 있습니다.",
     liveHref: "",
-    stack: [
-      "React",
-      "tailwindCSS",
-      "Next.js",
-      "Drizzle ORM",
-      "NextAuth.js",
-      "MySql",
-    ],
-    github: "https://github.com/devldm/grammar-check",
+    stack: ["Next.js", "tailwindCSS", "Clerk", "Go", "go-chi", "Docker"],
+    github: "https://github.com/devldm/grammar-check-go/",
   },
   {
     imgPath: "/images/airbnb-crop-more-1.png",
