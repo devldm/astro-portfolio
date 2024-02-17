@@ -33,8 +33,8 @@ export const Projects: ProjectType[] = [
     body: "In progress project that allows people to practice Korean grammar.",
     body_kr:
       "한국어를 혼자 공부하고 싶은 사람들을 위해 만들었습니다. 한국어 문법을 연습할 수 있습니다.",
-    liveHref: "",
-    stack: ["Next.js", "tailwindCSS", "Clerk", "Go", "go-chi", "Docker"],
+    liveHref: "https://grammar-check-go.vercel.app/",
+    stack: ["Next.js", "tailwindCSS", "Clerk", "Go", "go-chi", "Docker", "GCP"],
     github: "https://github.com/devldm/grammar-check-go/",
   },
   {
